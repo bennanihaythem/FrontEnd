@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-5">
+            <div class="panel panel-heading">Ajouter Devops</div>
+            <div class="panel panel-body">
+                <form  #devops=ngForm (ngSubmit)="onAddDevops(devops.value)">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="name" class="form-control" placeholder="Enter name" id="name" name="name" ngModel>
+                      </div>
+                      <div class="form-group">
+                        <label for="FirstName">FirstName:</label>
+                        <input type="firstname" class="form-control" placeholder="Enter FirstName" id="firstname" name="firstname" ngModel>
+                      </div>
+
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email" name="email" ngModel>
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Tel:</label>
+                    <input type="text" class="form-control" placeholder="Enter tel" id="tel" name="tel" ngModel>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

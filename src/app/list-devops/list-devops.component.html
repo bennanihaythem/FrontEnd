@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="panel panel-heading">ListDevops</div>
+        </div>
+        <table class="table table-stripped" *ngIf="listDevops">
+            <tr>
+                <th>Id_Devops</th>
+                <th>Name</th>
+                <th>FirstName</th>
+                <th>Email</th>
+                <th>Tel</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+            <tr *ngFor="let list of listDevops ; let index = index">
+              <td>{{list.id_devops}}</td>
+                <td>{{list.name}}</td>
+                <td>{{list.firstname}}</td>
+                <td>{{list.email}}</td>
+                <td>{{list.tel}}</td>
+<td>
+    <div>
+        <button class="btn btn-primary" (click)="onEditDevops(list)">Update</button>
+    </div>
+</td>
+
+            </tr>
+        </table>
+    </div>
+    
+</div>

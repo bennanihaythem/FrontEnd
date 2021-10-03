@@ -1,0 +1,7 @@
+div#avatar {
+    background-image: url("\\ProjectsAngular\\DevopsRest\\ProjectDevops\\src\\images\\devops2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+    
+  }
